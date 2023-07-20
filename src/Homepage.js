@@ -11,14 +11,14 @@ import Portfolio from './Portfolio';
 const Homepage = () => {
 
     const [isFlipped, setIsFlipped] = useState(false);
-  const [imageSrc, setImageSrc] = useState('/external/ellipse2123-93g-600h.png');
+  const [imageSrc, setImageSrc] = useState(process.env.PUBLIC_URL + '/external/coder_pic.png');
   const [activeIcon, setActiveIcon] = useState('coder');
 
   const photoView = () => {
   
     if (isFlipped === false) {
         setIsFlipped(!isFlipped);
-        setImageSrc('/external/ellipse22184-fr38-600h.png');
+        setImageSrc(process.env.PUBLIC_URL + '/external/photo_pic.png');
         setActiveIcon('photo');
 
     }
@@ -27,7 +27,7 @@ const Homepage = () => {
   const coderView = () =>{
     if (isFlipped === true) {
         setIsFlipped(!isFlipped);
-        setImageSrc('/external/ellipse2123-93g-600h.png');
+        setImageSrc(process.env.PUBLIC_URL + '/external/coder_pic.png');
         setActiveIcon('coder');
     }
 
@@ -39,7 +39,7 @@ const Homepage = () => {
         <div className="row">
         <div className="col">
           <img
-            src="/external/dev_icon2.png"
+          src={process.env.PUBLIC_URL + '/external/dev_icon2.png'}
             className={` ${activeIcon === 'coder' ? 'active-icon' : ''}`}
             style={{ width: '60px', height: '60px' }}
             alt="Dev"
@@ -48,7 +48,7 @@ const Homepage = () => {
         </div>
         <div className="col">
           <img
-            src="/external/cam_icon.png"
+          src={process.env.PUBLIC_URL + '/external/cam_icon.png'}
             className={` ${activeIcon === 'photo' ? 'active-icon' : ''}`}
             style={{ width: '60px', height: '60px' }}
             alt="Cam"

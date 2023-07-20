@@ -5,11 +5,11 @@ import React from 'react';
 
 const CoderLeftBackgroundAndText = () => {
 
-  const [backgroundImage, setBackgroundImage] = useState('/external/rectangle2132-huyr-1000w.png'); // Set the initial background image path
+  const [backgroundImage, setBackgroundImage] = useState(process.env.PUBLIC_URL + '/external/rectangle2132-huyr-1000w.png'); // Set the initial background image path
 
 
   const setInitialBackgroundImage = () => {
-    setBackgroundImage('/external/coder-left.png'); // Set the new background image path
+    setBackgroundImage(process.env.PUBLIC_URL + '/external/coder-left.png'); // Set the new background image path
   };
 
   // Call the function to set the background image initially

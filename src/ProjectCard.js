@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
     <>
       {soloProjects.map((project) => (
         <div key={project.id} className="card">
-          <img src={project.img || "https://www.example.com/example.png"} alt={project.title} className="image" />
+          <img src={`${process.env.PUBLIC_URL}${project.img}` || "https://www.example.com/example.png"} alt={project.title} className="image" />
           <h2 className="title">{project.title}</h2>
           <p className="description">{project.description}</p>
           <p className="technologies">{project.technologies}</p>

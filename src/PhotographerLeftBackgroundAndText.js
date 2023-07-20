@@ -3,11 +3,11 @@ import  './leftBackgroundAndText.css';
 
 const PhotographerLeftBackgroundAndText = () => {
 
-  const [backgroundImage, setBackgroundImage] = useState('/external/rectangle2132-huyr-1000w.png'); // Set the initial background image path
+  const [backgroundImage, setBackgroundImage] = useState(process.env.PUBLIC_URL + '/external/rectangle2132-huyr-1000w.png'); // Set the initial background image path
 
   // Function to set the background image initially
   const setInitialBackgroundImage = () => {
-    setBackgroundImage('/external/rectangle22183-ehk8-1000w.png'); // Set the new background image path
+    setBackgroundImage(process.env.PUBLIC_URL + '/external/rectangle22183-ehk8-1000w.png'); // Set the new background image path
   };
 
   // Call the function to set the background image initially
