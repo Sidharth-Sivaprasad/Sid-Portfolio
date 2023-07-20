@@ -1,0 +1,59 @@
+.particle_background {
+    display:flex;
+    position:relative;
+    z-index: -1; /* Set a lower z-index to position it behind other elements */
+  }
+
+.heading  {
+    position: absolute; /* Position the h1 element absolutely */
+    top: 7%; /* Move the element 50% down from the top */
+    left: 50%; /* Move the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+    font-size: 40px; /* Adjust the font size as needed */
+    color: #fff; /* Set the text color */
+
+    
+    opacity: 100;
+  
+    background: linear-gradient(to right, rgba(30, 207, 223, 0.901) 0%, rgba(8, 99, 97, 0.467) 100%);
+    background-size: 200% 100%; /* Set the initial background size to create the easing effect */
+    background-position: 100% 50%; /* Set the initial background position to start from the right */
+
+
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    padding: 5px 80px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: background-position 0.5s ease-in, border-color 0.5s ease-in;
+
+    transition: background-color 0.3s ease;
+  }
+
+  /* Define the fadeInOut animation */
+@keyframes fadeInOut {
+    0%, 100% {
+      /* At 0% and 100% opacity, the background color will be transparent */
+      background-color: rgba(255, 255, 255, 0);
+    }
+    50% {
+      /* At 50% opacity, the background color will be yellow */
+      background-color: rgba(81, 181, 201, 0.5);
+    }
+  }
+
+  .heading:hover {
+    
+    background-position: 0% 50%;
+    border-color: rgba(255, 255, 255, 0.2); /* Fade the border color on hover */
+
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line when there's not enough space */
+    justify-content: center; /* Centers the cards horizontally within the container */
+    gap: 100px; /* Adds spacing between cards */
+    margin-top: 20px; /* Add a top margin to separate the cards from the heading */
+  }
+
+  

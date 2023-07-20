@@ -1,0 +1,115 @@
+
+.background_right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  right: 0;
+  flex:1;
+  background-image: '';
+  background-size: cover;
+  background-position:0%;
+}
+
+
+
+.frame2_rectangle31 {
+  top: 21.470561981201172px;
+  left: 3.55908203125px;
+  width: 300px;
+  height: 74px;
+  position: absolute;
+  border-radius: 31px;
+  z-index: 1 ;
+}
+
+.frame2_text21 {
+  
+  color: rgba(6, 2, 2, 1);
+  
+  height: auto;
+  font-size: 44px;
+  font-style: light;
+  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 150;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+
+}
+
+.rightBackgroundAndText {
+  display: flex;
+  align-items: center;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Change to your desired vertical alignment */
+  margin-top: 300px; /* Adjust the top margin to bring the buttons down */
+  margin-left: 250px;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  
+  
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 50px; /* Adjust the spacing between buttons */
+  cursor: pointer;
+}
+
+.buttonImage {
+  width: 300px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border-radius: 80px; /* Adjust the border-radius to create a curved shape */
+  
+  transform: skew(-15deg); /* Apply a skew transform to create the slanting effect */
+
+}
+
+.buttonText {
+  margin-top: -50px; /* Adjust the spacing between the image and text */
+  margin-left: 30px; /* Adjust the left margin to align the text to the left */
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #000000; /* Adjust the text color */
+  font-weight: 300;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Change the font family to your desired font */
+  white-space: nowrap; /* Prevent line breaks in the text */
+  overflow: hidden; /* Hide any overflow of the text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+  text-align: left; /* Align the text to the left */
+  z-index: 1;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content:space-around;
+  z-index : 1;
+  margin-top: 60px;
+  cursor: pointer; 
+  transition: transform 0.2s ease;
+}
+
+.icon {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin: 20px;
+}
+
+.iconContainer a:hover .icon {
+  /* Apply a scale transform to the icons on hover for a visual effect */
+  transform: scale(1.1);
+}
+
+
+
+

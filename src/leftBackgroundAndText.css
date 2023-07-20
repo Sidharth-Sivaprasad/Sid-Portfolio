@@ -1,0 +1,41 @@
+.frame2_text {
+    top: 250px;
+    left: 150px;
+    color: rgba(255, 255, 255, 1);
+    width: 750px;
+    height: auto;
+    position: absolute;
+    font-size: 35px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Poppins ;
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+   .frame2_text1 {
+    font-size: 60px;
+    margin-bottom: 200px;
+    line-height: 2;
+   }
+
+   .frame2_text2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    line-height: 1.5;
+   }
+
+    .background_left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    left: 0;
+    flex:1;
+    background-image: '';
+    background-size: cover;
+    background-position: center;
+  }
