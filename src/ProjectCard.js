@@ -10,7 +10,7 @@ const ProjectCard = () => {
       description:
         "A Semantic Web based application using React.js that can provide interactive information/statistics on gun violence incidents in the United States. Used Ontology model tostructure and organise the semantic data processed from over 30,000 data entries, which was queried using a Fuseki server",
       technologies: "React Js | Springboot | Semantic Web",
-      github: "https://github.com/Rasif-Taghizada/Educational-Website-ReactJs",
+      github: "https://github.com/Sidharth-Sivaprasad/SER-531-Gun_Violence_tracker_and_Analyser",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const ProjectCard = () => {
       description:
         "Developed the model and control system for an autonomous rover model that detects obstacles and moves autonomously through a maze, mapping the environment. Unity was used to develop theenvironment and ROS2 to develop the rover",
       technologies: "Unity | ROS2",     
-      github: "https://github.com/Rasif-Taghizada/Covid-19-Tracking",
+      github: "https://github.com/Sidharth-Sivaprasad/SER515-Spring22-Team8",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const ProjectCard = () => {
       img: '/external/portfolio.png',
       description: "My React portfolio showcases my passion for web development and display my skills and accomplishments in a visually appealing manner. Using React for my frontend, I have created dynamic and interactive components, making the user experience smooth and engaging.",
       technologies: "ReactJs | NextJs",
-      github: "https://github.com/Rasif-Taghizada/RubyCode-Blog",
+      github: "https://github.com/Sidharth-Sivaprasad/Sid-Portfolio",
     },
   ];
 

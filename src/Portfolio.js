@@ -3,6 +3,7 @@ import { useCallback } from 'react';
 import { loadFull } from 'tsparticles';
 import Particles from 'react-tsparticles';
 import ProjectCard from './ProjectCard';
+import ExpCard from './ExpCard';
 import  "./portfolio.css";
 
 
@@ -13,10 +14,10 @@ const Portfolio = () => {
     
     particles: {
       number: {
-        value: 50,
+        value: 40,
         density: {
           enable: false,
-          value_area: 1000,
+          value_area: 500,
         },
       },
       color: {
@@ -37,7 +38,7 @@ const Portfolio = () => {
         },
       },
       size: {
-        value: 8,
+        value: 6,
         random: false,
         anim: {
           enable: false,
@@ -61,7 +62,7 @@ const Portfolio = () => {
         distance: 600,
         color: '#ffffff',
         opacity: 0.4,
-        width: 2,
+        width: 1,
       },
       move: {
         enable: true,
@@ -98,7 +99,7 @@ const Portfolio = () => {
         },
         bubble: {
           distance: 400,
-          size: 40,
+          size: 30,
           duration: 2,
           opacity: 8,
           speed: 3,
@@ -119,7 +120,7 @@ const Portfolio = () => {
     },
     retina_detect: true,
     background: {
-      color: '#1B6C8F',
+      color: '#4A8997',
       image: '',
       position: '50% 50%',
       repeat: 'no-repeat',
@@ -152,10 +153,21 @@ const Portfolio = () => {
           options={ParticlesConfig}
         />
       </div>
+      
       <h1 className="heading" >RECENT PROJECTS</h1>
-      <div className="cardsContainer">   
-        <ProjectCard />   
-    </div>
+      <div className="cardsContainer">  
+       
+        <ProjectCard />    
+      </div>
+    
+
+      <div className="spacing">
+      <h1  className="heading" >EXPERIENCE </h1> 
+      </div>
+      <div className="cardsContainer">  
+      
+      <ExpCard /> 
+      </div>
     </section>
   );
 };

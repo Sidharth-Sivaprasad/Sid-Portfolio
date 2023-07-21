@@ -22,7 +22,7 @@ const PhotographerLeftBackgroundAndText = () => {
           <br />
           <span className="frame2_text2">I’m Sid.</span>
           <br />
-          <span style={{ fontSize: '1.2em' }}>[<span style={{ fontSize: '1em' }}>O</span>"]:</span>
+          <span style={{ fontSize: '1.2em' }}>[<span style={{ fontSize: '1em' }}>O</span>"]: &#123;</span>
           <br />
           <span>Photographer </span>
           <br />

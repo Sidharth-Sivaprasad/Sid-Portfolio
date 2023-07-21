@@ -23,6 +23,14 @@ const CoderRightBackgroundAndText = () => {
     window.open(resumeUrl, '_blank'); // Opens the document in a new tab
   };
 
+  const openGmailCompose = () => {
+    const email = 'sivaprasadsidharth@gmail.com'; // Replace with your Gmail address
+    const subject = 'Get In Touch'; // Set the subject for the email
+    const body = 'Hello, I would like to get in touch with you.'; // Set the body for the email
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoLink);
+  };
+
   return (
     <div className="rightBackgroundAndText">
       <div className="background_right" style={{ backgroundImage: `url(${rightBackgroundSrc})` }}>
@@ -35,7 +43,7 @@ const CoderRightBackgroundAndText = () => {
             <img src={process.env.PUBLIC_URL + '/external/rectangle3260-i56d-200h.png'} alt="Button 2" className="buttonImage" />
             <span className="buttonText">Resume</span>
           </button>
-          <button className="button">
+          <button className="button" onClick={openGmailCompose}>
             <img src={process.env.PUBLIC_URL + '/external/rectangle3260-i56d-200h.png'} alt="Button 3" className="buttonImage" />
             <span className="buttonText">Contact Me</span>
           </button>

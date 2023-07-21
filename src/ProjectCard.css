@@ -1,13 +1,13 @@
 /* ProjectCard.module.css */
 
 .card {
-    background-color: #23b2d9;
+    background-color: #85D3FF;
     padding: 10px;
-    border-radius: 50px;
-    box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
+    
+    box-shadow: 1 4px 8px rgba(129, 169, 193, 0.507);
     margin: 30px;
-    border: 4px solid #543e5c67;
-
+    border: 1px solid #543e5c67;
+  border-radius: 5px;
     display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,3 +67,108 @@
     transform: scale(1.2); /* Increase the scale to make the elements bigger on hover */
   }
   
+
+
+ /* ExpCard.css */
+
+.exp_card {
+  /* Your styles for the card container */
+  /* ... */
+  width: 40%; /* Adjust the width as needed */
+  min-width: 200px;
+  height: 150px;
+  background-color: #ffffffc0;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  box-shadow: 1 4px 8px rgba(129, 169, 193, 0.507);
+  margin: 30px;
+  border: 1px solid #543e5c67;
+  transition: transform 0.6s; /* Add a smooth transition for the flip effect */
+  cursor: pointer; 
+  
+}
+
+.exp_card:hover {
+  background-color: transparent; /* Set the background color to transparent on hover */
+}
+
+.exp_card.visible {
+  opacity: 1; /* When the card has the "visible" class, set opacity to 1 to make it visible */
+}
+
+.exp_image {
+  /* Your styles for the project image */
+  /* ... */
+  flex:content;
+  max-width: 80px; /* Adjust the image size as needed */
+  height: 80px;
+  object-fit:contain;
+  border-radius: 50px;
+}
+
+.exp_content {
+  /* Your styles for the content container */
+  /* ... */
+  
+  padding-left: 20px; /* Add some space between the image and content */
+}
+
+.exp_title {
+  /* Your styles for the project title */
+  /* ... */
+  font-size: 20px;
+  text-align: left;
+  margin-top: 2px;
+  color: #050505;
+}
+
+.exp_position {
+  /* Your styles for the project role/position */
+  /* ... */
+  margin-top: 3px;
+  text-align: left;
+  color: #0a0a0a;
+}
+
+.exp_date {
+  /* Your styles for the project date */
+  /* ... */
+  margin-top: 1px;
+  text-align: left;
+
+  color: #080707;
+}
+
+.exp_links {
+  /* Your styles for the links container */
+  /* ... */
+  display: flex;
+  justify-content:space-around;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.exp_links a {
+  /* Your styles for the links */
+  /* ... */
+  padding: 5px 10px;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #070809;
+  border-radius: 4px;
+}
+
+.exp_links:hover {
+  transform: scale(1.1); /* Increase the scale to make the elements bigger on hover */
+}
+
+.exp_links-container {
+  display: flex; /* Use flexbox to place links in the same line */
+}
+
+.exp_card.flip {
+  transform: rotateY(180deg); /* Rotate the card 180 degrees on the Y-axis to show the back side */
+}
