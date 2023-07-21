@@ -14,6 +14,7 @@ const CoderLeftBackgroundAndText = () => {
 
   // Call the function to set the background image initially
   useState(setInitialBackgroundImage);
+  
   return (
     <div className={styles.leftBackgroundAndText}>
       <div className="background_left" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
@@ -23,7 +24,7 @@ const CoderLeftBackgroundAndText = () => {
           <br />
           <span className="frame2_text2">I’m Sid.</span>
           <br />
-          <span className="frame2_text3">() =&gt; &#123;</span>
+          <span className="frame2_text3">( ) =&gt; &#123;</span>
           <br />
           <span className="frame2_text4">Engineer </span>
           <br />

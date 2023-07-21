@@ -1,9 +1,8 @@
 import React from 'react';
 import { useCallback } from 'react';
- import { loadFull } from 'tsparticles';
- import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import Particles from 'react-tsparticles';
 import ProjectCard from './ProjectCard';
-
 import  "./portfolio.css";
 
 
@@ -120,7 +119,7 @@ const Portfolio = () => {
     },
     retina_detect: true,
     background: {
-      color: '#147987',
+      color: '#1B6C8F',
       image: '',
       position: '50% 50%',
       repeat: 'no-repeat',
@@ -145,28 +144,18 @@ const Portfolio = () => {
   return (
     <section id="profile">
       <div className="particle_background">
-      
-      <Particles
-        id='tsparticles'
-        particlesLoaded='particlesLoaded'
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={ParticlesConfig}
-      />
-    </div>
-    <h1 className="heading" >RECENT PROJECTS</h1>
-
-    <div className="cardsContainer">
-    
-        
-        
-    <ProjectCard  />
-        
+        <Particles
+          id='tsparticles'
+          particlesLoaded='particlesLoaded'
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={ParticlesConfig}
+        />
       </div>
-    
-    
-        
-       
+      <h1 className="heading" >RECENT PROJECTS</h1>
+      <div className="cardsContainer">   
+        <ProjectCard />   
+    </div>
     </section>
   );
 };

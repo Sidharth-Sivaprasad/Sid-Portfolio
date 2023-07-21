@@ -11,7 +11,6 @@ const CoderRightBackgroundAndText = () => {
   // Call the function to set the background image initially
   useState(setInitialBackgroundImage);
 
-
   const scrollToProfile = () => {
     const profileSection = document.getElementById('profile');
     if (profileSection) {
@@ -20,7 +19,7 @@ const CoderRightBackgroundAndText = () => {
   };
 
   const openResume = () => {
-    const resumeUrl = '/external/Sid_Resume.pdf'; 
+    const resumeUrl = process.env.PUBLIC_URL + '/external/Sid_Resume.pdf'; 
     window.open(resumeUrl, '_blank'); // Opens the document in a new tab
   };
 

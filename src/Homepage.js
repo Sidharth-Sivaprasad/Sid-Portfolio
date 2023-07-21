@@ -1,6 +1,4 @@
-
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Homepage.css'
 import PhotographerLeftBackgroundAndText from './PhotographerLeftBackgroundAndText';
 import CoderLeftBackgroundAndText from './CoderLeftBackgroundAndText';
@@ -10,17 +8,25 @@ import Portfolio from './Portfolio';
 
 const Homepage = () => {
 
-    const [isFlipped, setIsFlipped] = useState(false);
+
+  const [isFlipped, setIsFlipped] = useState(false);
   const [imageSrc, setImageSrc] = useState(process.env.PUBLIC_URL + '/external/coder_pic.png');
   const [activeIcon, setActiveIcon] = useState('coder');
 
+  useEffect(() => {
+    // Update the document title when the component is mounted or updated
+    document.title = 'Sidharth Portfolio';
+    return () => {
+      // Reset the document title when the component is unmounted
+      document.title = 'Old Tab Title';
+    };
+  }, []);
+
   const photoView = () => {
-  
     if (isFlipped === false) {
         setIsFlipped(!isFlipped);
         setImageSrc(process.env.PUBLIC_URL + '/external/photo_pic.png');
         setActiveIcon('photo');
-
     }
   };
 
@@ -30,11 +36,10 @@ const Homepage = () => {
         setImageSrc(process.env.PUBLIC_URL + '/external/coder_pic.png');
         setActiveIcon('coder');
     }
-
   }; 
 
   return (
-    <div >
+    <div>
      <div className="container">
         <div className="row">
         <div className="col">
@@ -70,8 +75,7 @@ const Homepage = () => {
     {isFlipped ? <></> : <div className="container"><Portfolio /> </div> }
     
     </div>
-  );
-  
+  );  
 };
 
 export default Homepage;
