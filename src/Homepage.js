@@ -15,12 +15,12 @@ const Homepage = () => {
 
   useEffect(() => {
     // Update the document title when the component is mounted or updated
-    document.title = 'Sidharth Portfolio';
+    document.title = isFlipped ? 'Sidharth Photography Portfolio': 'Sidharth Dev Portfolio' ;
     return () => {
       // Reset the document title when the component is unmounted
       document.title = 'Old Tab Title';
     };
-  }, []);
+  }, [isFlipped]);
 
   const photoView = () => {
     if (isFlipped === false) {

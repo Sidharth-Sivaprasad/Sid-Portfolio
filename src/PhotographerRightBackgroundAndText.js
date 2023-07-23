@@ -13,6 +13,11 @@ const PhotographerRightBackgroundAndText = () => {
   // Call the function to set the background image initially
   useState(setInitialBackgroundImage);
 
+  const openResume = () => {
+    const resumeUrl = process.env.PUBLIC_URL + '/external/Photography Portfolio.pdf'; 
+    window.open(resumeUrl, '_blank'); // Opens the document in a new tab
+  };
+
   const openGmailCompose = () => {
     const email = 'sivaprasadsidharth@gmail.com'; // Replace with your Gmail address
     const subject = 'Get In Touch'; // Set the subject for the email
@@ -25,7 +30,7 @@ const PhotographerRightBackgroundAndText = () => {
     <div className="rightBackgroundAndText">
       <div className="background_right" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="buttonsContainer">
-          <button className="button">
+          <button className="button" onClick={openResume}>
             <img src={process.env.PUBLIC_URL + '/external/rectangle3260-i56d-200h.png'} alt="Button 1" className="buttonImage" />
             <span className="buttonText">Portfolio</span>
           </button>
