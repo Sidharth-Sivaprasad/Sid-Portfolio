@@ -50,10 +50,10 @@ const CoderRightBackgroundAndText = () => {
 
           <div className="iconContainer">
             <a href='https://github.com/Sidharth-Sivaprasad' target="_blank" rel="noopener noreferrer">
-              <img src={process.env.PUBLIC_URL + '/external/icone-github.png'} alt="Icon 1" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/external/icone-github.png'} alt="Icon 1" className="icon1" />
             </a>
             <a href='https://www.linkedin.com/in/sidharth-k-s/' target="_blank" rel="noopener noreferrer">
-              <img src={process.env.PUBLIC_URL + '/external/linkedin-icon.png'} alt="Icon 2" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/external/linkedin-icon.png'} alt="Icon 2" className="icon1" />
             </a>
           </div>
         </div>

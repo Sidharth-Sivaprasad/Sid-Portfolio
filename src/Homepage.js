@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
 import './Homepage.css'
 import PhotographerLeftBackgroundAndText from './PhotographerLeftBackgroundAndText';
 import CoderLeftBackgroundAndText from './CoderLeftBackgroundAndText';
@@ -12,6 +12,19 @@ const Homepage = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [imageSrc, setImageSrc] = useState(process.env.PUBLIC_URL + '/external/coder_pic.png');
   const [activeIcon, setActiveIcon] = useState('coder');
+  const [scrollbarColor, setScrollbarColor] = useState('#f1f1f1');
+
+ 
+
+  useEffect(() => {
+    // Replace the condition below with your logic to determine when to change the color
+    if (isFlipped) {
+      setScrollbarColor('#050709'); // Change the color to red
+    } else {
+      setScrollbarColor('#3AD7ED'); // Change the color back to the default (grey)
+    }
+  }, [isFlipped]);
+
 
   useEffect(() => {
     // Update the document title when the component is mounted or updated
@@ -21,6 +34,8 @@ const Homepage = () => {
       document.title = 'Old Tab Title';
     };
   }, [isFlipped]);
+
+
 
   const photoView = () => {
     if (isFlipped === false) {
@@ -44,18 +59,18 @@ const Homepage = () => {
         <div className="row">
         <div className="col">
           <img
-          src={process.env.PUBLIC_URL + '/external/dev_icon2.png'}
-            className={` ${activeIcon === 'coder' ? 'active-icon' : ''}`}
-            style={{ width: '60px', height: '60px' }}
+            src={process.env.PUBLIC_URL + '/external/dev_icon2.png'}
+            className={` ${activeIcon === 'coder' ? 'active-icon' : 'inactive-icon'}`}
+            style={{ width: '65px', height: '65px' }}
             alt="Dev"
             onClick={coderView}
           />
         </div>
         <div className="col">
           <img
-          src={process.env.PUBLIC_URL + '/external/cam_icon.png'}
-            className={` ${activeIcon === 'photo' ? 'active-icon' : ''}`}
-            style={{ width: '60px', height: '60px' }}
+            src={process.env.PUBLIC_URL + '/external/cam_icon.png'}
+            className={` ${activeIcon === 'photo' ? 'active-icon' : 'inactive-icon'}`}
+            style={{ width: '65px', height: '65px' }}
             alt="Cam"
             onClick={photoView}
           />
@@ -76,6 +91,21 @@ const Homepage = () => {
     <footer className="footer">
       <span>Developed by Sidharth :}</span>
     </footer>
+
+    <style>
+        {`
+          /* Works on Chrome, Edge, and Safari */
+          ::-webkit-scrollbar {
+            background-color: 'black' ;
+            width: 10px;
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background-color: ${scrollbarColor};
+            border-radius: 5px;
+          }
+        `}
+      </style>
     </div>
   );  
 };

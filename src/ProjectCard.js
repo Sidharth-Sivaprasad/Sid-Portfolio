@@ -25,7 +25,7 @@ const ProjectCard = () => {
       id: 3,
       title: "Portfolio",
       img: '/external/portfolio.png',
-      description: "My React portfolio showcases my passion for web development and display my skills and accomplishments in a visually appealing manner. Using React for my frontend, I have created dynamic and interactive components, making the user experience smooth and engaging.",
+      description: "My React portfolio showcases my passion for web development and displays my skills and accomplishments in a visually appealing manner. Using React for my frontend, I have created dynamic and interactive components, making the user experience smooth and engaging.",
       technologies: "ReactJs | NextJs",
       github: "https://github.com/Sidharth-Sivaprasad/Sid-Portfolio",
     },

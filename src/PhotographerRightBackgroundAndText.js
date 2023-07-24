@@ -41,10 +41,10 @@ const PhotographerRightBackgroundAndText = () => {
 
           <div className="iconContainer">
             <a href='https://www.instagram.com/sid_harth_ks/' target="_blank" rel="noopener noreferrer">
-              <img src={process.env.PUBLIC_URL + '/external/insta-icon.png'} alt="Icon 3" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/external/insta-icon.png'} alt="Icon 3" className="icon1" />
             </a>
             <a href='https://www.behance.net/sidhartsivapra' target="_blank" rel="noopener noreferrer">
-              <img src={process.env.PUBLIC_URL + '/external/behance-icon.png'} alt="Icon 4" className="icon" />
+              <img src={process.env.PUBLIC_URL + '/external/behance-icon.png'} alt="Icon 4" className="icon1" />
             </a>
           </div>
         </div>

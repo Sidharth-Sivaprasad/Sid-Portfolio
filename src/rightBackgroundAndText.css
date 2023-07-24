@@ -97,13 +97,13 @@
   transition: transform 0.2s ease;
 }
 
-.icon {
+.icon1 {
   width: 50px; /* Adjust the width as needed */
   height: 50px; /* Adjust the height as needed */
   margin: 20px;
 }
 
-.iconContainer a:hover .icon {
+.iconContainer a:hover .icon1 {
   /* Apply a scale transform to the icons on hover for a visual effect */
   transform: scale(1.1);
 }
