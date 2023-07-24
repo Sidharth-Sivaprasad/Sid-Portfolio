@@ -1,11 +1,11 @@
 .frame2_text {
-    top: 170px;
-    left: 150px;
+    top: 12vw;
+    left: 12vw;
     color: rgba(255, 255, 255, 1);
-    width: 800px;
+    width: 40vw;
     height: auto;
     position: absolute;
-    font-size: 35px;
+    font-size: 2.2vw;
     font-style: Bold;
     text-align: left;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -17,13 +17,13 @@
   }
 
    .frame2_text1 {
-    font-size: 45px;
+    font-size: 4vw;
     margin-bottom: 100px;
     line-height: 1.5;
    }
 
    .frame2_text2 {
-    font-size: 50px;
+    font-size: 3vw;
     margin-bottom: 150px;
     line-height: 2.5;
    }
@@ -32,7 +32,8 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 50%;
+    width: 50vw;
+    height: 50vw;
     left: 0;
     flex:1;
     background-image: '';

@@ -2,15 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vw;
+    min-width: 50vw;
     position: relative;
   }
   
   .row {
     display: flex;
     position: absolute;
-    top: 60px;
-    left: 130px;
+    top: 4vw;
+    left: 10vw;
     cursor: pointer;
     z-index: 1;
     transition: transform 0.3s ease; /* Add transition for a smooth effect */
@@ -19,14 +20,12 @@
   
   .col {
     flex :1 ;
-    width: 70px;
-    height:70px;
-    margin-right: 40px; /* Add margin between columns */
+    margin-right: 2vw; /* Add margin between columns */
   }
 
   .icon {
-    width: 10px; /* Adjust the width to a smaller value */
-    height: 10px; /* Adjust the height to a smaller value */
+    width: 1vw; /* Adjust the width to a smaller value */
+    height: 1vw; /* Adjust the height to a smaller value */
     transition: transform 0.3s ease;
     animation: iconAnimation 5s linear infinite;
   }
@@ -36,13 +35,13 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-1vw);
     }
   }
 
   @keyframes iconAnimation1 {
     0%, 100% {
-      transform: translateY(-10px);
+      transform: translateY(-1vw);
     }
     50% {
       transform: translateY(-0);
@@ -67,23 +66,7 @@
     margin-right: 0; /* Remove margin for the last column */
   }
 
-  .frame2_text {
-    top: 360px;
-    left: 250px;
-    color: rgba(255, 255, 255, 1);
-    width: 750px;
-    height: auto;
-    position: absolute;
-    font-size: 10px;
-    font-style: Bold;
-    text-align: left;
-    font-family: Poppins ;
-    font-weight: 600;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-    z-index: 1;
-  }
+ 
 
   .black_and_white {
     filter: grayscale(100%);
@@ -102,11 +85,11 @@
    }
 
   .flippableContainer {
-    position: relative;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    width: 30vw; /* 50% of the viewport width */
+    height: 30vw;
     z-index: 1;
-    perspective: 1000px;
+    perspective: 1000vw;
   }
   
   .flippable {
@@ -153,7 +136,7 @@
   }
   
   .active-icon {
-    border: 15px solid #1c1b1ba5; /* Add a border to highlight the active icon */
+    border: 0.8vw solid #1c1b1ba5; /* Add a border to highlight the active icon */
     border-radius: 50%; /* Apply a circular border */
   }
 

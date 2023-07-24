@@ -3,7 +3,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50%;
+  width: 50vw;
+  height: 50vw;
   right: 0;
   flex:1;
   background-image: '';
@@ -47,8 +48,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Change to your desired vertical alignment */
-  margin-top: 220px; /* Adjust the top margin to bring the buttons down */
-  margin-left: 250px;
+  margin-top: 12vw; /* Adjust the top margin to bring the buttons down */
+  margin-left: 10vw;
 }
 
 .button:hover {
@@ -61,23 +62,23 @@
   background: none;
   border: none;
   padding: 0;
-  margin-bottom: 50px; /* Adjust the spacing between buttons */
+  margin-bottom: 3vw; /* Adjust the spacing between buttons */
   cursor: pointer;
 }
 
 .buttonImage {
-  width: 300px; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
-  border-radius: 80px; /* Adjust the border-radius to create a curved shape */
+  width: 13vw; /* Adjust the width as needed */
+  height: 3vw; /* Adjust the height as needed */
+  border-radius: 10vw; /* Adjust the border-radius to create a curved shape */
   
   transform: skew(-15deg); /* Apply a skew transform to create the slanting effect */
 
 }
 
 .buttonText {
-  margin-top: -40px; /* Adjust the spacing between the image and text */
-  margin-left: 30px; /* Adjust the left margin to align the text to the left */
-  font-size: 30px; /* Adjust the font size as needed */
+  margin-top: -2.5vw; /* Adjust the spacing between the image and text */
+  margin-left: 1vw; /* Adjust the left margin to align the text to the left */
+  font-size: 2vw; /* Adjust the font size as needed */
   color: #000000; /* Adjust the text color */
   font-weight: 300;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Change the font family to your desired font */
@@ -92,15 +93,15 @@
   display: flex;
   justify-content:space-around;
   z-index : 1;
-  margin-top: 60px;
+  margin-top: 3vw;
   cursor: pointer; 
   transition: transform 0.2s ease;
 }
 
 .icon1 {
-  width: 50px; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
-  margin: 20px;
+  width: 3vw; /* Adjust the width as needed */
+  height: 3vw; /* Adjust the height as needed */
+  margin: 2vw;
 }
 
 .iconContainer a:hover .icon1 {

@@ -61,7 +61,7 @@ const Homepage = () => {
           <img
             src={process.env.PUBLIC_URL + '/external/dev_icon2.png'}
             className={` ${activeIcon === 'coder' ? 'active-icon' : 'inactive-icon'}`}
-            style={{ width: '65px', height: '65px' }}
+            style={{ width: '4vw', height: '4vw' }}
             alt="Dev"
             onClick={coderView}
           />
@@ -70,7 +70,7 @@ const Homepage = () => {
           <img
             src={process.env.PUBLIC_URL + '/external/cam_icon.png'}
             className={` ${activeIcon === 'photo' ? 'active-icon' : 'inactive-icon'}`}
-            style={{ width: '65px', height: '65px' }}
+            style={{  width: '4vw', height: '4vw' }}
             alt="Cam"
             onClick={photoView}
           />
