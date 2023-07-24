@@ -28,15 +28,14 @@
     line-height: 2.5;
    }
 
-    .background_left {
+   .background_left {
     position: absolute;
     top: 0;
-    bottom: 0;
-    width: 50vw;
-    height: 50vw;
+    width: 50vw; /* Set the width to 100% of the viewport width */
+    height: 100vh; /* Set the height to 100% of the viewport height */
     left: 0;
-    flex:1;
-    background-image: '';
+    flex: 1;
+    background-image: ''; /* Replace 'your-background-image-url.jpg' with the actual image URL */
     background-size: cover;
     background-position: center;
   }

@@ -2,9 +2,8 @@
 .background_right {
   position: absolute;
   top: 0;
-  bottom: 0;
   width: 50vw;
-  height: 50vw;
+  height: 100vh;
   right: 0;
   flex:1;
   background-image: '';

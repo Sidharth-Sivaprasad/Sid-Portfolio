@@ -1,11 +1,12 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vw;
-    min-width: 50vw;
-    position: relative;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vw;
+  min-width: 50vw;
+  position: relative;
+}
+
   
   .row {
     display: flex;
@@ -89,7 +90,7 @@
     width: 30vw; /* 50% of the viewport width */
     height: 30vw;
     z-index: 1;
-    perspective: 1000vw;
+    perspective: 1000px;
   }
   
   .flippable {
@@ -150,6 +151,7 @@
   color: #fff; /* Set text color to white (or any contrasting color) */
   padding: 10px; /* Add some padding to create spacing around the content */
   text-align: center; /* Center the content inside the footer */
+  z-index: 1;
 }
 
 

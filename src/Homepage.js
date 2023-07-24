@@ -88,6 +88,7 @@ const Homepage = () => {
     </div> 
     
     {isFlipped ? <></> : <div className="container"><Portfolio /> </div> }
+    
     <footer className="footer">
       <span>Developed by Sidharth :}</span>
     </footer>
