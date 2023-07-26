@@ -21,6 +21,15 @@ const ExpCard = () => {
       description: "◦ Worked in a team that led the development and deployment of proprietary technology Kloudpad FR - Facial Recognition System for employees and loyalty customers for a pan-India retail chain. <br /><br /> ◦ By implementing the CloudVision API, the data collected through facial recognition was analyzed in real-time using Tableau. This allows for informed action to be taken, such as personalized marketing or customer service interactions, which can lead to an improved customer experience.",
       website: "http://cloudsysanalytics.com/"
     },
+    {
+      id: 2,
+      title: "Zoft Solutions Pvt. Ltd.",
+      img: '/external/zoft.jpeg',
+      role: "Software Engineering Intern",
+      date: "July 2018",
+      description: "◦ Development of a module in the product School Wizard - aimed at child capability enhancement <br /><br /> ◦ Designed and implemented an application to generate Barcodes using Spring MVC and deployed the Javaapplication using Apache Tomcat server. This experience taught me valuable skills in application development,testing, and deployment in a real-world environment.",
+      website: "https://www.zoftsolutions.com/"
+    },
     // Add more experience data here...
   ];
 

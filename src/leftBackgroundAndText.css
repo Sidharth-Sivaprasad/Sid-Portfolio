@@ -35,7 +35,13 @@
     height: 100vh; /* Set the height to 100% of the viewport height */
     left: 0;
     flex: 1;
-    background-image: ''; /* Replace 'your-background-image-url.jpg' with the actual image URL */
-    background-size: cover;
+    background-image: ''; 
     background-position: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .background_left {
+      width: 100%; /* Adjust the width to take the full width of the screen */
+      height: 50vh; /* Adjust the minimum height for smaller screens */
+    }
   }

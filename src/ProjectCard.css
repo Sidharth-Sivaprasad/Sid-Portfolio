@@ -48,7 +48,7 @@
   }
   
   .links {
-    margin-top: 1vw;
+    margin-bottom: 0.5vw;
     color: black;
     border: #000000;
     font-size: 1.1vw;
@@ -57,6 +57,7 @@
   .links a {
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 0.5vw;
     color: #000000;
     border: #000000;
   }

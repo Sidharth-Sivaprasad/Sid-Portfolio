@@ -20,13 +20,13 @@ const CoderRightBackgroundAndText = () => {
 
   const openResume = () => {
     const resumeUrl = process.env.PUBLIC_URL + '/external/Sid_Resume.pdf'; 
-    window.open(resumeUrl, '_blank'); // Opens the document in a new tab
+    window.open(resumeUrl, '_blank'); 
   };
 
   const openGmailCompose = () => {
-    const email = 'sivaprasadsidharth@gmail.com'; // Replace with your Gmail address
-    const subject = 'Get In Touch'; // Set the subject for the email
-    const body = 'Hello, I would like to get in touch with you.'; // Set the body for the email
+    const email = 'sivaprasadsidharth@gmail.com'; 
+    const subject = 'Get In Touch'; 
+    const body = 'Hello, I would like to get in touch with you.'; 
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink);
   };

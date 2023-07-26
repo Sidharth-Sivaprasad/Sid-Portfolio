@@ -11,6 +11,13 @@
   background-position:0%;
 }
 
+@media screen and (max-width: 768px) {
+  .background_right {
+    width: 50%; /* Adjust the width to take the full width of the screen */
+    height: 50vh; /* Adjust the minimum height for smaller screens */
+  }
+}
+
 .frame2_rectangle31 {
   top: 21.470561981201172px;
   left: 3.55908203125px;
